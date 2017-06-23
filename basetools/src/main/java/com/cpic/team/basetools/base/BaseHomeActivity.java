@@ -12,20 +12,16 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Toast;
 
-import com.cpic.team.basetools.model.LogoutEvent;
 import com.cpic.team.basetools.utils.ProgressDialogHandle;
 import com.readystatesoftware.systembartint.SystemBarTintManager;
 import com.sdsmdg.tastytoast.TastyToast;
-
-import org.greenrobot.eventbus.EventBus;
-import org.greenrobot.eventbus.Subscribe;
 
 import cn.pedant.SweetAlert.SweetAlertDialog;
 
 /**
  * Created by Taylor on 2016/11/8.
  */
-public abstract class BaseActivity extends AppCompatActivity {
+public abstract class BaseHomeActivity extends AppCompatActivity {
 
 
     protected Dialog dialog;
@@ -43,7 +39,6 @@ public abstract class BaseActivity extends AppCompatActivity {
             tintManager.setStatusBarTintColor(Color.parseColor(BaseConfig.MainColor));//通知栏所需颜色
         }
         getIntentData(savedInstanceState);
-        EventBus.getDefault().register(this);
         dialog = ProgressDialogHandle.getProgressDialog(this, null);
         sp = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         editor = sp.edit();
@@ -52,7 +47,6 @@ public abstract class BaseActivity extends AppCompatActivity {
         initData();
         registerListener();
     }
-
 
     @TargetApi(19)
     private void setTranslucentStatus(boolean on) {
@@ -67,15 +61,15 @@ public abstract class BaseActivity extends AppCompatActivity {
         win.setAttributes(winParams);
     }
 
-    @Subscribe
-    public void onEventMainThread(LogoutEvent logoutEvent) {
-        finish();
-    }
+//    @Subscribe
+//    public void onEventMainThread(FinishAllEventEvent finishAllEventEvent) {
+//        finish();
+//    }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        EventBus.getDefault().unregister(this);
+        //  EventBus.getDefault().unregister(this);
     }
 
     /**
@@ -150,7 +144,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         TastyToast.makeText(this, msg, Toast.LENGTH_SHORT, TastyToast.WARNING);
     }
 
-    protected void showFailedDiaLog(String message) {
+    protected void showFailedDiaLog( String message) {
         new SweetAlertDialog(this, SweetAlertDialog.ERROR_TYPE)
                 .setTitleText(message)
                 .setConfirmText("确     定").setCancelClickListener(new SweetAlertDialog.OnSweetClickListener() {
@@ -172,7 +166,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         }).show();
     }
 
-    protected void showWarningDiaLog(String message) {
+    protected void showWarningDiaLog( String message) {
         new SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE)
                 .setTitleText(message)
                 .setConfirmText("确     定").setCancelClickListener(new SweetAlertDialog.OnSweetClickListener() {
