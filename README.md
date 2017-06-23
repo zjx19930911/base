@@ -13,7 +13,7 @@ allprojects {
 ```
 
 ```
-compile 'com.github.zjx19930911:baseLib:058e795e8b'
+compile 'com.github.zjx19930911:base:54e0146971'
 
 ```	
 
