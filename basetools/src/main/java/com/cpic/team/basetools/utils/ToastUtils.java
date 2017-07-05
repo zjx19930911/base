@@ -47,6 +47,45 @@ public class ToastUtils {
         }
     }
 
+    public static void showFailedDiaLog(Context context, final String title, final String content, SweetAlertDialog.OnSweetClickListener listener) {
+        if (content.equals("")) {
+            new SweetAlertDialog(context, SweetAlertDialog.ERROR_TYPE)
+                    .setTitleText(title)
+                    .setConfirmText("确     定").setCancelClickListener(listener).show();
+        } else {
+            new SweetAlertDialog(context, SweetAlertDialog.ERROR_TYPE)
+                    .setTitleText(title)
+                    .setContentText(content)
+                    .setConfirmText("确     定").setCancelClickListener(listener).show();
+        }
+    }
+
+    public static void showSucessDiaLog(Context context, final String title, final String content, SweetAlertDialog.OnSweetClickListener listener) {
+        if (content.equals("")) {
+            new SweetAlertDialog(context, SweetAlertDialog.SUCCESS_TYPE)
+                    .setTitleText(title)
+                    .setConfirmText("确     定").setCancelClickListener(listener).show();
+        } else {
+            new SweetAlertDialog(context, SweetAlertDialog.SUCCESS_TYPE)
+                    .setTitleText(title)
+                    .setContentText(content)
+                    .setConfirmText("确     定").setCancelClickListener(listener).show();
+        }
+    }
+
+    public static void showWarningDiaLog(Context context, final String title, final String content, SweetAlertDialog.OnSweetClickListener listener) {
+        if (content.equals("")) {
+            new SweetAlertDialog(context, SweetAlertDialog.WARNING_TYPE)
+                    .setTitleText(title)
+                    .setConfirmText("确     定").setCancelClickListener(listener).show();
+        } else {
+            new SweetAlertDialog(context, SweetAlertDialog.WARNING_TYPE)
+                    .setTitleText(title)
+                    .setContentText(content)
+                    .setConfirmText("确     定").setCancelClickListener(listener).show();
+        }
+    }
+
     public static void showSucessDiaLog(Context context, final String title, final String content) {
         if (content.equals("")) {
             new SweetAlertDialog(context, SweetAlertDialog.SUCCESS_TYPE)
