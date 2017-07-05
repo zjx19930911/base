@@ -102,7 +102,7 @@ public class PhotoPop {
         @Override
         public View instantiateItem(ViewGroup container, int position) {
             PhotoView photoView = new PhotoView(container.getContext());
-            Glide.with(activity).load(imgs.get(position)).fitCenter().into(photoView);
+            Glide.with(activity).load(imgs.get(position)).into(photoView);
             // Now just add PhotoView to ViewPager and return it
             container.addView(photoView, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
             return photoView;
