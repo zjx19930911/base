@@ -28,7 +28,7 @@ public class ToastUtils {
         if (content.equals("")) {
             new SweetAlertDialog(context, SweetAlertDialog.ERROR_TYPE)
                     .setTitleText(title)
-                    .setConfirmText("确     定").setCancelClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                    .setConfirmText("确     定").setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
                 @Override
                 public void onClick(SweetAlertDialog sweetAlertDialog) {
                     sweetAlertDialog.dismissWithAnimation();
@@ -38,7 +38,7 @@ public class ToastUtils {
             new SweetAlertDialog(context, SweetAlertDialog.ERROR_TYPE)
                     .setTitleText(title)
                     .setContentText(content)
-                    .setConfirmText("确     定").setCancelClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                    .setConfirmText("确     定").setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
                 @Override
                 public void onClick(SweetAlertDialog sweetAlertDialog) {
                     sweetAlertDialog.dismissWithAnimation();
@@ -51,12 +51,12 @@ public class ToastUtils {
         if (content.equals("")) {
             new SweetAlertDialog(context, SweetAlertDialog.ERROR_TYPE)
                     .setTitleText(title)
-                    .setConfirmText("确     定").setCancelClickListener(listener).show();
+                    .setConfirmText("确     定").setConfirmClickListener(listener).show();
         } else {
             new SweetAlertDialog(context, SweetAlertDialog.ERROR_TYPE)
                     .setTitleText(title)
                     .setContentText(content)
-                    .setConfirmText("确     定").setCancelClickListener(listener).show();
+                    .setConfirmText("确     定").setConfirmClickListener(listener).show();
         }
     }
 
@@ -64,12 +64,12 @@ public class ToastUtils {
         if (content.equals("")) {
             new SweetAlertDialog(context, SweetAlertDialog.SUCCESS_TYPE)
                     .setTitleText(title)
-                    .setConfirmText("确     定").setCancelClickListener(listener).show();
+                    .setConfirmText("确     定").setConfirmClickListener(listener).show();
         } else {
             new SweetAlertDialog(context, SweetAlertDialog.SUCCESS_TYPE)
                     .setTitleText(title)
                     .setContentText(content)
-                    .setConfirmText("确     定").setCancelClickListener(listener).show();
+                    .setConfirmText("确     定").setConfirmClickListener(listener).show();
         }
     }
 
@@ -77,12 +77,12 @@ public class ToastUtils {
         if (content.equals("")) {
             new SweetAlertDialog(context, SweetAlertDialog.WARNING_TYPE)
                     .setTitleText(title)
-                    .setConfirmText("确     定").setCancelClickListener(listener).show();
+                    .setConfirmText("确     定").setConfirmClickListener(listener).show();
         } else {
             new SweetAlertDialog(context, SweetAlertDialog.WARNING_TYPE)
                     .setTitleText(title)
                     .setContentText(content)
-                    .setConfirmText("确     定").setCancelClickListener(listener).show();
+                    .setConfirmText("确     定").setConfirmClickListener(listener).show();
         }
     }
 
@@ -90,7 +90,7 @@ public class ToastUtils {
         if (content.equals("")) {
             new SweetAlertDialog(context, SweetAlertDialog.SUCCESS_TYPE)
                     .setTitleText(title)
-                    .setConfirmText("确     定").setCancelClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                    .setConfirmText("确     定").setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
                 @Override
                 public void onClick(SweetAlertDialog sweetAlertDialog) {
                     sweetAlertDialog.dismissWithAnimation();
@@ -100,7 +100,7 @@ public class ToastUtils {
             new SweetAlertDialog(context, SweetAlertDialog.SUCCESS_TYPE)
                     .setTitleText(title)
                     .setContentText(content)
-                    .setConfirmText("确     定").setCancelClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                    .setConfirmText("确     定").setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
                 @Override
                 public void onClick(SweetAlertDialog sweetAlertDialog) {
                     sweetAlertDialog.dismissWithAnimation();
@@ -113,7 +113,7 @@ public class ToastUtils {
         if (content.equals("")) {
             new SweetAlertDialog(context, SweetAlertDialog.WARNING_TYPE)
                     .setTitleText(title)
-                    .setConfirmText("确     定").setCancelClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                    .setConfirmText("确     定").setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
                 @Override
                 public void onClick(SweetAlertDialog sweetAlertDialog) {
                     sweetAlertDialog.dismissWithAnimation();
@@ -123,7 +123,7 @@ public class ToastUtils {
             new SweetAlertDialog(context, SweetAlertDialog.WARNING_TYPE)
                     .setTitleText(title)
                     .setContentText(content)
-                    .setConfirmText("确     定").setCancelClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                    .setConfirmText("确     定").setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
                 @Override
                 public void onClick(SweetAlertDialog sweetAlertDialog) {
                     sweetAlertDialog.dismissWithAnimation();
