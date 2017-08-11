@@ -153,7 +153,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void showFailedDiaLog(String message) {
         new SweetAlertDialog(this, SweetAlertDialog.ERROR_TYPE)
                 .setTitleText(message)
-                .setConfirmText("确     定").setCancelClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                .setConfirmText("确     定").setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
             @Override
             public void onClick(SweetAlertDialog sweetAlertDialog) {
                 sweetAlertDialog.dismissWithAnimation();
@@ -164,7 +164,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void showSucessDiaLog(String message) {
         new SweetAlertDialog(this, SweetAlertDialog.SUCCESS_TYPE)
                 .setTitleText(message)
-                .setConfirmText("确     定").setCancelClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                .setConfirmText("确     定").setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
             @Override
             public void onClick(SweetAlertDialog sweetAlertDialog) {
                 sweetAlertDialog.dismissWithAnimation();
@@ -175,7 +175,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void showWarningDiaLog(String message) {
         new SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE)
                 .setTitleText(message)
-                .setConfirmText("确     定").setCancelClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                .setConfirmText("确     定").setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
             @Override
             public void onClick(SweetAlertDialog sweetAlertDialog) {
                 sweetAlertDialog.dismissWithAnimation();
