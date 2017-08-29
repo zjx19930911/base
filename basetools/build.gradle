@@ -71,5 +71,6 @@ dependencies {
     compile 'com.wanjian:cockroach:0.0.5'
     compile files('libs/alipaySdk-20160516.jar')
     compile files('libs/aliyun-oss-sdk-android-2.3.0.jar')
+    compile files('libs/alipaySdk-20170725.jar')
 }
 apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
