@@ -5,4 +5,13 @@ package com.cpic.team.basetools.model;
  */
 
 public class LogoutEvent {
+
+    public int type;
+
+    public LogoutEvent(int type) {
+        this.type = type;
+    }
+
+    public LogoutEvent() {
+    }
 }
