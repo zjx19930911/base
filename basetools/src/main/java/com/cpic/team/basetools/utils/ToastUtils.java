@@ -135,20 +135,20 @@ public class ToastUtils {
 
 
     public static void showSucessToast(final String message) {
-        TastyToast.makeText(context, message, Toast.LENGTH_LONG, TastyToast.SUCCESS);
+        TastyToast.makeText(context, message, Toast.LENGTH_SHORT, TastyToast.SUCCESS);
     }
 
 
     public static void showFailedToast(final String message) {
-        TastyToast.makeText(context, message, Toast.LENGTH_LONG, TastyToast.ERROR);
+        TastyToast.makeText(context, message, Toast.LENGTH_SHORT, TastyToast.ERROR);
     }
 
     public static void showWarningToast(final String message) {
-        TastyToast.makeText(context, message, Toast.LENGTH_LONG, TastyToast.WARNING);
+        TastyToast.makeText(context, message, Toast.LENGTH_SHORT, TastyToast.WARNING);
     }
 
     public static void showConfuseToast(final String message) {
-        TastyToast.makeText(context, message, Toast.LENGTH_LONG, TastyToast.CONFUSING);
+        TastyToast.makeText(context, message, Toast.LENGTH_SHORT, TastyToast.CONFUSING);
     }
 
     public static void showToast(final int messageResId) {
