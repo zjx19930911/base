@@ -106,7 +106,7 @@ public abstract class BaseHomeActivity extends AppCompatActivity {
      * @param msg
      */
     protected void showLongToast(String msg) {
-        Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
 
     /**
@@ -124,7 +124,7 @@ public abstract class BaseHomeActivity extends AppCompatActivity {
      * @param msg
      */
     protected void showSuccessToast(String msg) {
-        TastyToast.makeText(this, msg, Toast.LENGTH_LONG, TastyToast.SUCCESS);
+        TastyToast.makeText(this, msg, Toast.LENGTH_SHORT, TastyToast.SUCCESS);
     }
 
     /**
@@ -133,11 +133,11 @@ public abstract class BaseHomeActivity extends AppCompatActivity {
      * @param msg
      */
     protected void showFailedToast(String msg) {
-        TastyToast.makeText(this, msg, Toast.LENGTH_LONG, TastyToast.ERROR);
+        TastyToast.makeText(this, msg, Toast.LENGTH_SHORT, TastyToast.ERROR);
     }
 
     protected void showWarningToast(String msg) {
-        TastyToast.makeText(this, msg, Toast.LENGTH_LONG, TastyToast.WARNING);
+        TastyToast.makeText(this, msg, Toast.LENGTH_SHORT, TastyToast.WARNING);
     }
 
     protected void showWarningToast2(String msg) {
