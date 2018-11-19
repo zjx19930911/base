@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'com.github.dcendents.android-maven'
 ext {
     PUBLISH_GROUP_ID = 'cn.daxigua.android'
     PUBLISH_ARTIFACT_ID = 'base-build-tools'
